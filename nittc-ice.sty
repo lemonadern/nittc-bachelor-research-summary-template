@@ -86,9 +86,9 @@
 % 筆者 12bp 中央揃え (研究室 名前)を入力
 \renewcommand{\author}[2]{\fontsize{12bp}{18bp}\selectfont\centering\vspace{0.3\baselineskip}#1\vspace{0.5\baselineskip}\hspace{1.5em}#2}
 % あらまし
-\renewcommand{\abstract}[1]{\textbf{あらまし}\quad #1}
+\renewcommand{\abstract}[1]{}
 % キーワード
-\newcommand{\keyword}[1]{\textbf{キーワード}\quad #1\newline}
+\newcommand{\keyword}[1]{}
 % 章 行間はWordデフォルト 改ページしない 12bp 太字
 \ModifyHeading{chapter}{
 lines=1.15,
@@ -126,16 +126,16 @@ label_format={\thesubsubsection.},
 \usepackage{titleps}
 \newpagestyle{header}{
   \sethead
-  {\parbox{0.9\textwidth}{\header{
-   \ \ 豊田工業高等専門学校　情報工学科\\
-   \ \ Department of Information and Computer Engineering,\\
-   \ \ National Institute of Technology, Toyota College
+  {\parbox{0.65\textwidth}{\header{
+   \ \ 豊田工業高等専門学校　専攻科　情報科学専攻\\
+   \ \ Computer Science Course, Advanced Engineering Course for Bachelor's Degree\\
+   \ \ National Institute of Technology (KOSEN), TOYOTA COLLEGE
    }}}
   {}
-  {\parbox{\textwidth}{\header{
-   卒業論文\\
-   Graduation Thesis\\
-   February 22, \the\year % 日にちは都度変更する必要有り
+  {\parbox{0.3\textwidth}{\raggedleft\header{
+   研究概要\\
+   Research Summary\\
+   January 8, 2026 % 日にちは都度変更する必要有り
    }}}
    \setfoot
    {}
